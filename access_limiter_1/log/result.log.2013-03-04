@@ -1,0 +1,176 @@
+ INFO [frequency.DownloaderThread] 6 total url: 0 starttime:Mon Mar 04 15:55:37 CST 2013
+ INFO [frequency.DownloaderThread] 2 total url: 0 starttime:Mon Mar 04 15:55:37 CST 2013
+ INFO [frequency.DownloaderThread] 3 total url: 0 starttime:Mon Mar 04 15:55:37 CST 2013
+ INFO [frequency.DownloaderThread] 5 total url: 0 starttime:Mon Mar 04 15:55:37 CST 2013
+ INFO [frequency.DownloaderThread] 7 total url: 0 starttime:Mon Mar 04 15:55:37 CST 2013
+ INFO [frequency.DownloaderThread] 0 total url: 0 starttime:Mon Mar 04 15:55:37 CST 2013
+ INFO [frequency.DownloaderThread] 9 total url: 0 starttime:Mon Mar 04 15:55:37 CST 2013
+ INFO [frequency.DownloaderThread] 1 total url: 0 starttime:Mon Mar 04 15:55:37 CST 2013
+ INFO [frequency.DownloaderThread] 4 total url: 0 starttime:Mon Mar 04 15:55:37 CST 2013
+ INFO [frequency.DownloaderThread] 8 total url: 0 starttime:Mon Mar 04 15:55:37 CST 2013
+ INFO [proxy.ProxyManager] http://64.120.242.245:8080-->false
+ INFO [proxy.ProxyManager] http://64.120.242.245:8080-->false
+ INFO [proxy.ProxyManager] http://64.120.242.245:8080-->false
+ INFO [proxy.ProxyManager] http://64.120.242.245:8080-->false
+ INFO [proxy.ProxyManager] http://64.120.242.245:8080-->false
+ INFO [proxy.ProxyManager] http://64.120.242.246:8080-->false
+ INFO [proxy.ProxyManager] http://64.120.242.246:8080-->false
+ INFO [proxy.ProxyManager] http://64.120.242.246:8080-->false
+ INFO [proxy.ProxyManager] http://64.120.242.246:8080-->false
+ INFO [proxy.ProxyManager] http://64.120.242.246:8080-->false
+ INFO [proxy.ProxyManager] http://64.120.242.247:8080-->false
+ INFO [proxy.ProxyManager] http://64.120.242.247:8080-->false
+ INFO [proxy.ProxyManager] http://64.120.242.247:8080-->false
+ INFO [proxy.ProxyManager] http://64.120.242.247:8080-->false
+ INFO [proxy.ProxyManager] http://64.120.242.247:8080-->false
+ INFO [proxy.ProxyManager] http://64.120.242.248:8080-->false
+ INFO [proxy.ProxyManager] http://64.120.242.248:8080-->false
+ INFO [proxy.ProxyManager] http://64.120.242.248:8080-->false
+ INFO [proxy.ProxyManager] http://64.120.242.245:8080-->false
+ INFO [proxy.ProxyManager] http://64.120.242.245:8080-->false
+ INFO [proxy.ProxyManager] http://64.120.242.245:8080-->false
+ INFO [proxy.ProxyManager] http://64.120.242.245:8080-->false
+ INFO [proxy.ProxyManager] http://64.120.242.245:8080-->false
+ INFO [proxy.ProxyManager] http://64.120.242.246:8080-->false
+ INFO [proxy.ProxyManager] http://64.120.242.246:8080-->false
+ INFO [proxy.ProxyManager] http://64.120.242.246:8080-->false
+ INFO [proxy.ProxyManager] http://64.120.242.246:8080-->false
+ INFO [proxy.ProxyManager] http://64.120.242.246:8080-->false
+ INFO [proxy.ProxyManager] http://64.120.242.247:8080-->false
+ INFO [proxy.ProxyManager] http://64.120.242.247:8080-->false
+ INFO [proxy.ProxyManager] http://64.120.242.247:8080-->false
+ INFO [proxy.ProxyManager] http://64.120.242.247:8080-->false
+ INFO [proxy.ProxyManager] http://64.120.242.247:8080-->false
+ INFO [proxy.ProxyManager] http://64.120.242.248:8080-->false
+ INFO [proxy.ProxyManager] http://64.120.242.248:8080-->false
+ INFO [proxy.ProxyManager] http://64.120.242.248:8080-->false
+ INFO [proxy.ProxyManager] http://64.120.242.248:8080-->false
+ INFO [proxy.ProxyManager] http://200.174.85.193:3128-->false
+ INFO [proxy.ProxyManager] http://122.72.28.14:80-->false
+ INFO [proxy.ProxyManager] http://122.72.28.14:80-->false
+ INFO [proxy.ProxyManager] http://122.72.28.14:80-->false
+ INFO [proxy.ProxyManager] http://122.228.80.126:1280-->true
+ INFO [proxy.ProxyManager] http://122.228.80.126:1280-->true
+ INFO [proxy.ProxyManager] http://122.228.80.126:1280-->true
+ INFO [proxy.ProxyManager] http://122.228.80.126:1280-->true
+ INFO [proxy.ProxyManager] http://122.228.80.126:1280-->true
+ INFO [proxy.ProxyManager] http://123.129.214.155:80-->true
+ INFO [proxy.ProxyManager] http://123.129.214.155:80-->true
+ INFO [proxy.ProxyManager] http://123.129.214.155:80-->true
+ INFO [proxy.ProxyManager] http://123.129.214.155:80-->true
+ INFO [proxy.ProxyManager] http://123.129.214.155:80-->true
+ INFO [proxy.ProxyManager] http://122.228.80.126:1280-->true
+ INFO [proxy.ProxyManager] http://122.228.80.126:1280-->true
+ INFO [proxy.ProxyManager] http://122.228.80.126:1280-->true
+ INFO [proxy.ProxyManager] http://122.228.80.126:1280-->true
+ INFO [proxy.ProxyManager] http://122.228.80.126:1280-->true
+ INFO [proxy.ProxyManager] http://123.129.214.155:80-->true
+ INFO [proxy.ProxyManager] http://123.129.214.155:80-->true
+ INFO [proxy.ProxyManager] http://123.129.214.155:80-->true
+ INFO [proxy.ProxyManager] http://123.129.214.155:80-->true
+ INFO [proxy.ProxyManager] http://123.129.214.155:80-->true
+ INFO [proxy.ProxyManager] http://122.228.80.126:1280-->true
+ INFO [proxy.ProxyManager] http://122.228.80.126:1280-->true
+ INFO [proxy.ProxyManager] http://122.228.80.126:1280-->false
+ INFO [proxy.ProxyManager] http://122.228.80.126:1280-->true
+ INFO [proxy.ProxyManager] http://122.228.80.126:1280-->true
+ INFO [proxy.ProxyManager] http://123.129.214.155:80-->true
+ INFO [proxy.ProxyManager] http://123.129.214.155:80-->true
+ INFO [proxy.ProxyManager] http://123.129.214.155:80-->true
+ INFO [proxy.ProxyManager] http://123.129.214.155:80-->true
+ INFO [proxy.ProxyManager] http://123.129.214.155:80-->true
+ INFO [proxy.ProxyManager] http://123.183.171.247:80-->true
+ INFO [proxy.ProxyManager] http://123.183.171.247:80-->false
+ INFO [proxy.ProxyManager] http://123.183.171.247:80-->true
+ INFO [proxy.ProxyManager] http://123.183.171.247:80-->true
+ INFO [proxy.ProxyManager] http://123.183.171.247:80-->true
+ INFO [proxy.ProxyManager] http://203.93.104.20:80-->false
+ INFO [proxy.ProxyManager] http://203.93.104.20:80-->false
+ INFO [proxy.ProxyManager] http://203.93.104.20:80-->false
+ INFO [proxy.ProxyManager] http://203.93.104.20:80-->false
+ INFO [proxy.ProxyManager] http://203.93.104.20:80-->true
+ INFO [proxy.ProxyManager] http://122.228.80.126:1280-->true
+ INFO [proxy.ProxyManager] http://122.228.80.126:1280-->true
+ INFO [proxy.ProxyManager] http://122.228.80.126:1280-->true
+ INFO [proxy.ProxyManager] http://122.228.80.126:1280-->true
+ INFO [proxy.ProxyManager] http://122.228.80.126:1280-->true
+ INFO [proxy.ProxyManager] http://123.129.214.155:80-->true
+ INFO [proxy.ProxyManager] http://123.129.214.155:80-->true
+ INFO [proxy.ProxyManager] http://123.129.214.155:80-->true
+ INFO [proxy.ProxyManager] http://123.129.214.155:80-->true
+ INFO [proxy.ProxyManager] http://123.129.214.155:80-->true
+ INFO [proxy.ProxyManager] http://123.183.171.247:80-->true
+ INFO [proxy.ProxyManager] http://123.183.171.247:80-->true
+ INFO [proxy.ProxyManager] http://123.183.171.247:80-->true
+ INFO [proxy.ProxyManager] http://123.183.171.247:80-->false
+ INFO [proxy.ProxyManager] http://123.183.171.247:80-->true
+ INFO [proxy.ProxyManager] http://203.93.104.20:80-->false
+ INFO [proxy.ProxyManager] http://203.93.104.20:80-->false
+ INFO [proxy.ProxyManager] http://203.93.104.20:80-->false
+ INFO [proxy.ProxyManager] http://203.93.104.20:80-->false
+ INFO [proxy.ProxyManager] http://203.93.104.20:80-->false
+ INFO [frequency.DownloaderThread] 0 total url: 0 starttime:Mon Mar 04 17:04:15 CST 2013
+ INFO [frequency.DownloaderThread] 2 total url: 0 starttime:Mon Mar 04 17:04:15 CST 2013
+ INFO [frequency.DownloaderThread] 1 total url: 0 starttime:Mon Mar 04 17:04:15 CST 2013
+ INFO [frequency.DownloaderThread] 3 total url: 0 starttime:Mon Mar 04 17:04:15 CST 2013
+ INFO [frequency.DownloaderThread] 3 total url: 1 starttime:Mon Mar 04 17:05:14 CST 2013
+ INFO [proxy.ProxyManager] http://122.228.80.126:1280-->true
+ INFO [proxy.ProxyManager] http://122.228.80.126:1280-->true
+ INFO [proxy.ProxyManager] http://123.129.214.155:80-->true
+ INFO [proxy.ProxyManager] http://123.129.214.155:80-->true
+ INFO [proxy.ProxyManager] http://123.183.171.247:80-->true
+ INFO [proxy.ProxyManager] http://123.183.171.247:80-->true
+ INFO [proxy.ProxyManager] http://203.93.104.20:80-->true
+ INFO [proxy.ProxyManager] http://203.93.104.20:80-->true
+ INFO [proxy.ProxyManager] http://ks3096436.kimsufi.com:3128-->false
+ INFO [proxy.ProxyManager] http://ks3096436.kimsufi.com:3128-->false
+ INFO [frequency.DownloaderThread] 0 total url: 22 starttime:Mon Mar 04 17:05:14 CST 2013
+ INFO [proxy.ProxyManager] http://recruitment.kacst.edu.sa:77-->false
+ INFO [proxy.ProxyManager] http://recruitment.kacst.edu.sa:77-->false
+ INFO [proxy.ProxyManager] http://filtertest.net:77-->false
+ INFO [proxy.ProxyManager] http://filtertest.net:77-->false
+ INFO [proxy.ProxyManager] http://taisirsso.kacst.edu.sa:77-->false
+ INFO [proxy.ProxyManager] http://taisirsso.kacst.edu.sa:77-->false
+ INFO [proxy.ProxyManager] http://122.228.80.126:1280-->true
+ INFO [proxy.ProxyManager] http://122.228.80.126:1280-->true
+ INFO [proxy.ProxyManager] http://123.129.214.155:80-->true
+ INFO [proxy.ProxyManager] http://123.129.214.155:80-->true
+ INFO [proxy.ProxyManager] http://123.183.171.247:80-->true
+ INFO [proxy.ProxyManager] http://123.183.171.247:80-->false
+ INFO [proxy.ProxyManager] http://203.93.104.20:80-->false
+ INFO [proxy.ProxyManager] http://203.93.104.20:80-->false
+ INFO [proxy.ProxyManager] http://218.207.82.93:3128-->true
+ INFO [proxy.ProxyManager] http://218.207.82.93:3128-->true
+ INFO [proxy.ProxyManager] http://218.188.13.237:8888-->true
+ INFO [proxy.ProxyManager] http://218.188.13.237:8888-->true
+ INFO [proxy.ProxyManager] http://173.213.96.229:3128-->false
+ INFO [proxy.ProxyManager] http://173.213.96.229:3128-->true
+ INFO [proxy.ProxyManager] http://5.39.119.105:3128-->false
+ INFO [proxy.ProxyManager] http://5.39.119.105:3128-->false
+ INFO [proxy.ProxyManager] http://173.213.96.229:8080-->false
+ INFO [proxy.ProxyManager] http://173.213.96.229:8080-->false
+ INFO [proxy.ProxyManager] http://5.39.119.105:8080-->false
+ INFO [proxy.ProxyManager] http://5.39.119.105:8080-->false
+ INFO [proxy.ProxyManager] http://120.203.214.182:80-->true
+ INFO [proxy.ProxyManager] http://120.203.214.182:80-->true
+ INFO [proxy.ProxyManager] http://202.29.60.220:8080-->true
+ INFO [proxy.ProxyManager] http://202.29.60.220:8080-->true
+ INFO [proxy.ProxyManager] http://202.146.237.70:8013-->true
+ INFO [proxy.ProxyManager] http://202.146.237.70:8013-->true
+ INFO [proxy.ProxyManager] http://219.93.39.164:3128-->true
+ INFO [proxy.ProxyManager] http://219.93.39.164:3128-->true
+ INFO [proxy.ProxyManager] http://120.197.232.30:8086-->true
+ INFO [proxy.ProxyManager] http://120.197.232.30:8086-->true
+ INFO [proxy.ProxyManager] http://120.203.214.182:81-->true
+ INFO [proxy.ProxyManager] http://120.203.214.182:81-->true
+ INFO [frequency.DownloaderThread] 1 total url: 280 starttime:Mon Mar 04 17:05:14 CST 2013
+ INFO [org.apache.http.impl.client.DefaultHttpClient] I/O exception (org.apache.http.NoHttpResponseException) caught when processing request: The target server failed to respond
+ INFO [org.apache.http.impl.client.DefaultHttpClient] Retrying request
+ INFO [frequency.DownloaderThread] 2 total url: 27 starttime:Mon Mar 04 17:05:14 CST 2013
+ INFO [org.apache.http.impl.client.DefaultHttpClient] I/O exception (org.apache.http.NoHttpResponseException) caught when processing request: The target server failed to respond
+ INFO [org.apache.http.impl.client.DefaultHttpClient] Retrying request
+ INFO [org.apache.http.impl.client.DefaultHttpClient] I/O exception (org.apache.http.NoHttpResponseException) caught when processing request: The target server failed to respond
+ INFO [org.apache.http.impl.client.DefaultHttpClient] Retrying request
+ INFO [frequency.DownloaderThread] when frequency = 3000 total url: 1 starttime:Mon Mar 04 18:40:21 CST 2013finishtime:Mon Mar 04 18:40:25 CST 2013
+ INFO [frequency.DownloaderThread] when frequency = 13800 total url: 1 starttime:Mon Mar 04 18:40:21 CST 2013finishtime:Mon Mar 04 18:40:36 CST 2013
+ INFO [frequency.DownloaderThread] when frequency = 11100 total url: 5 starttime:Mon Mar 04 18:40:21 CST 2013finishtime:Mon Mar 04 18:43:21 CST 2013

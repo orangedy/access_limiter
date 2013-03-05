@@ -1,0 +1,16 @@
+http://51dai.li/http_anonymous.html
+xquery version "1.0";
+declare namespace h = "http://www.w3.org/1999/xhtml";
+
+declare variable $rootNode := //HTML;
+
+declare variable $table := $rootNode/BODY//DIV[@id="tb"];
+
+<list>
+    {
+        for $tr in $table//TR
+        return  if (count($tr/TD) = 4)
+                then <li>{concat($tr/TD[2]/text(), ":", $tr/TD[3]/text(), "&#xD;&#xA;")}</li>
+                else ""
+    }
+</list>
