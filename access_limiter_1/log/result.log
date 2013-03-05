@@ -31,6 +31,8 @@ ERROR [proxy.ProxyCrawler] 51dali (系统找不到指定的文件。):E:\workspa
  INFO [frequency.FirefoxTest] 百度搜索_Cheese!
  INFO [frequency.FirefoxTest] 百度搜索_Cheese!
  INFO [frequency.FirefoxTest] 百度搜索_Cheese!
+ 
+ 
  INFO [frequency.FirefoxTest] http://www.google.com.hk/search?hl=zh-CN&newwindow=1&safe=strict&site=&source=hp&q=Cheese!
  INFO [org.apache.http.impl.client.DefaultHttpClient] I/O exception (java.net.SocketException) caught when processing request: Connection reset
  INFO [org.apache.http.impl.client.DefaultHttpClient] Retrying request
