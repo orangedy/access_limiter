@@ -4,7 +4,9 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -12,7 +14,8 @@ public class FirefoxTest {
 
 	private static final Logger log = Logger.getLogger(FirefoxTest.class);
 
-	private WebDriver driver = new FirefoxDriver();
+//	private WebDriver driver = new FirefoxDriver();
+	private WebDriver driver = new InternetExplorerDriver();
 
 	private int count = 10000;
 
