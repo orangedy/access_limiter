@@ -14,38 +14,49 @@ public class FirefoxTest {
 
 	private static final Logger log = Logger.getLogger(FirefoxTest.class);
 
-//	private WebDriver driver = new FirefoxDriver();
-	private WebDriver driver = new InternetExplorerDriver();
+	private WebDriver driver = new FirefoxDriver();
+	// private WebDriver driver = new InternetExplorerDriver();
 
 	private int count = 10000;
 
 	private int intervalMs = 5000;
 
-	public void work() {
+	public void work() throws InterruptedException {
 		driver.get("http://www.google.com.hk");
+
 		WebElement element1 = driver.findElement(By.name("q"));
 		element1.sendKeys("Cheese!");
 		element1.submit();
+
 		log.info(driver.getTitle());
 		for (int i = 0; i < count; i++) {
-			WebElement element = driver.findElement(By.name("q"));
-			element.clear();
-			element.sendKeys("Cheese!" + i);
-			element.submit();
-			new WebDriverWait(driver, 10).until(new ExpectedCondition<Boolean>() {
-				public Boolean apply(WebDriver d) {
-					// return d.getTitle().toLowerCase().startsWith("cheese!");
-					if(d.getTitle().contains("Chesser!")){
-						return true;
-					}else{
-						return false;
+			try {
+				WebElement element = driver.findElement(By.name("q"));
+				element.clear();
+				element.sendKeys("Cheese!" + i);
+				element.submit();
+			} catch (Exception e) {
+				Thread.sleep(10000);
+			}
+			try {
+				new WebDriverWait(driver, 15).until(new ExpectedCondition<Boolean>() {
+					public Boolean apply(WebDriver d) {
+						// return
+						// d.getTitle().toLowerCase().startsWith("cheese!");
+						if (d.getTitle().contains("Chesser!")) {
+							return true;
+						} else {
+							return false;
+						}
 					}
-				}
-			});
+				});
+			} catch (Exception e) {
+				log.error("timeout");
+			}
 		}
 	}
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		FirefoxTest test = new FirefoxTest();
 		test.work();
 	}

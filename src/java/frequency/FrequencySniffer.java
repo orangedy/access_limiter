@@ -107,7 +107,7 @@ class DownloaderThread extends Thread {
 	}
 
 	public boolean executeHttp(String url) {
-		boolean result = false;
+		boolean result = true;
 		HttpGet request = new HttpGet(url);
 		configRequestHeader(request);
 		// 每次执行都创建新的context和cookie，没有连续性
@@ -120,8 +120,8 @@ class DownloaderThread extends Thread {
 			HttpEntity entity = response.getEntity();
 			this.log.debug(Thread.currentThread().getName() + " " + response.getStatusLine());
 			int statusCode = response.getStatusLine().getStatusCode();
-			if (statusCode == 200 || statusCode == 302 || statusCode == 303) {
-				result = true;
+			if (statusCode == 503 || statusCode == 403) {
+				result = false;
 			}
 			EntityUtils.consume(entity);
 		} catch (ClientProtocolException e) {

@@ -111,7 +111,7 @@ public class ProxyManager {
 		List<HttpHost> workProxy = new ArrayList<HttpHost>();
 		ProxyManager manager = new ProxyManager("proxyTemp.txt");
 		HttpHost proxy = null;
-		int trytime = 5;
+		int trytime = 3;
 		while ((proxy = manager.getProxy()) != null) {
 			int count = 0;
 			for (int i = 0; i < trytime; i++) {
