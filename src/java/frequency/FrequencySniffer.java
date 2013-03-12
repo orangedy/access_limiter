@@ -1,8 +1,14 @@
 package frequency;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.Properties;
 
 import org.apache.http.HttpEntity;
@@ -12,6 +18,9 @@ import org.apache.http.HttpResponse;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
+import org.apache.http.cookie.Cookie;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.impl.cookie.BasicClientCookie;
 import org.apache.http.util.EntityUtils;
 import org.apache.log4j.Logger;
 
@@ -80,7 +89,7 @@ public class FrequencySniffer {
 class DownloaderThread extends Thread {
 	private Logger log = Logger.getLogger(DownloaderThread.class);
 
-	private HttpClient hc;
+	private DefaultHttpClient hc;
 
 	private HttpHost proxy;
 
@@ -91,6 +100,7 @@ class DownloaderThread extends Thread {
 		this.hc = HttpHelper.getHttpClient(10, 50);
 		HttpHelper.setUseragent("Mozilla/5.0 (Windows NT 6.1; rv:19.0) Gecko/20100101 Firefox/19.0", hc);
 		this.frequency = frequency;
+		setCookies();
 	}
 
 	public DownloaderThread(String threadName, int frequency, HttpHost proxy) {
@@ -99,6 +109,7 @@ class DownloaderThread extends Thread {
 		HttpHelper.setUseragent("Mozilla/5.0 (Windows NT 6.1; rv:19.0) Gecko/20100101 Firefox/19.0", hc);
 		this.frequency = frequency;
 		this.proxy = proxy;
+		setCookies();
 	}
 
 	public void setDownloaderProxy(HttpHost proxy) {
@@ -139,10 +150,24 @@ class DownloaderThread extends Thread {
 	}
 
 	public void run() {
-		int index = 10000;
+		List<String> seeds = new ArrayList<String>();
+		File seedsFile = new File("words.txt");
+		try {
+			BufferedReader reader = new BufferedReader(new FileReader(seedsFile));
+			String line = null;
+			while ((line = reader.readLine()) != null) {
+				seeds.add(line.split(" +")[0]);
+			}
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		int index = seeds.size();
 		Date start = new Date();
 		for (int i = 0; i < index; i++) {
-			String url = "http://www.google.com.hk/#q=fd" + i;
+			String url = "http://www.google.com.hk/search?hl=zh-CN&newwindow=1&safe=strict&site=&source=hp&q="
+					+ seeds.get(i) + "&btnG=Google+%E6%90%9C%E7%B4%A2";
 			boolean result = executeHttp(url);
 			if (result == true) {
 				try {
@@ -158,4 +183,27 @@ class DownloaderThread extends Thread {
 		}
 	}
 
+	public void setCookie(String name, String value, String path, String domain, Date date) {
+		BasicClientCookie cookie = new BasicClientCookie(name, value);
+		cookie.setDomain(domain);
+		cookie.setPath(path);
+		cookie.setExpiryDate(date);
+		this.hc.getCookieStore().addCookie(cookie);
+	}
+
+	public void setCookies() {
+		setCookie("GDSESS",
+				"ID=ba75a2866ff20718:TM=1363087064:C=c:IP=119.98.144.68-:S=APGng0vH-G3P-htg40sITFxZ5J2_29NGYg", "/",
+				".google.com.hk", new Date(2014, 1, 1));
+		setCookie(
+				"NID",
+				"67=nUr2P6J3tVFGcebPAczGw1gSZaLmXzN1fUTFshabMO4zOZu8MEiCt-iv9v4SwRxz7xXq4nzruz-UuBfEPwZmE5F5JHfI4VRdHLe5okS-kPqUMyILiV4w7G_VHPTAdBnx",
+				"/", ".google.com.hk", new Date(2014, 1, 1));
+		setCookie(
+				"PREF",
+				"ID=52fe7d60e3e7da2b:U=c524392dda21772b:FF=1:LD=zh-CN:NW=1:TM=1363086844:LM=1363086845:S=TApHERxpfkl_rsad",
+				"/", ".google.com.hk", new Date(2014, 1, 1));
+		setCookie("SNID", "67=FecNEerkDukRrHfO8UfBG8kIpcRp57LB9x6VCBaxcg=QDF_zbQPoVALO6CY", "/verify",
+				".google.com.hk", new Date(2014, 1, 1));
+	}
 }

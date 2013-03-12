@@ -62,7 +62,11 @@ public class ProxyManager {
 		hc.getParams().setParameter(CoreConnectionPNames.CONNECTION_TIMEOUT, 1000);
 		HttpHelper.setUseragent("Mozilla/5.0 (Windows NT 6.1; rv:19.0) Gecko/20100101 Firefox/19.0", hc);
 		HttpHelper.setProxy(hc, proxy);
-		HttpGet request = new HttpGet("http://www.google.com.hk/#q=fd");
+		HttpGet request = new HttpGet("http://www.google.com.hk/search?hl=zh-CN&newwindow=1&safe=strict&site=&source=hp&q=jk&btnG=Google+%E6%90%9C%E7%B4%A2");
+//		HttpGet request = new HttpGet("http://www.google.com.hk/search?q=jk");
+		HttpHelper.configRequestHeader(request);
+		HttpHelper.configRequestHeader(request, "Referer", "http://www.google.com.hk/");
+		HttpHelper.configRequestHeader(request, "Connection", "keep-alive");
 		try {
 			HttpResponse response = hc.execute(request);
 			log.debug(proxy.toString() + ":" + response.getStatusLine());

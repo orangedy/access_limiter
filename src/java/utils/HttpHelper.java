@@ -11,16 +11,16 @@ import org.apache.http.params.CoreConnectionPNames;
 import org.apache.http.params.CoreProtocolPNames;
 
 public class HttpHelper {
-	public static HttpClient getHttpClient(){
-		HttpClient hc = new DefaultHttpClient();
+	public static DefaultHttpClient getHttpClient(){
+		DefaultHttpClient hc = new DefaultHttpClient();
 		return hc;
 	}
 	
-	public static HttpClient getHttpClient(int maxPerRoute, int maxConn){
+	public static DefaultHttpClient getHttpClient(int maxPerRoute, int maxConn){
 		PoolingClientConnectionManager cm = new PoolingClientConnectionManager();
 		cm.setDefaultMaxPerRoute(maxPerRoute);
 		cm.setMaxTotal(maxConn);
-		HttpClient hc = new DefaultHttpClient(cm);
+		DefaultHttpClient hc = new DefaultHttpClient(cm);
 		return hc;
 	}
 	
@@ -50,5 +50,12 @@ public class HttpHelper {
 	
 	public static void configRequestHeader(HttpRequest request, String header, String value) {
 		request.addHeader(header, value);
+	}
+	
+	public static void configRequestHeader(HttpRequest request) {
+		HttpHelper.configRequestHeader(request, "Accept",
+				"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
+		HttpHelper.configRequestHeader(request, "Accept-Language", "zh-cn,zh;q=0.8,en-us;q=0.5,en;q=0.3");
+		HttpHelper.configRequestHeader(request, "Accept-Encoding", "gzip, deflate");
 	}
 }
